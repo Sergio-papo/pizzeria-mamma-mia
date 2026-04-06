@@ -29,4 +29,5 @@ src/
 
 Este proyecto es parte de un desafío académico y no incluye funcionalidades reales como autenticación o carrito.
 
-
+HITO 2:
+Se agrega el register y el login
