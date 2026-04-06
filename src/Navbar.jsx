@@ -1,11 +1,11 @@
-const Navbar = () => {
+const Navbar = ({ setView }) => {
   const total = 25000
   const token = false
 
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <button>🍕 Home</button>
+        <button onClick={() => setView('home')}>🍕 Home</button>
 
         {token ? (
           <>
@@ -14,8 +14,8 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <button>🔐 Login</button>
-            <button>🔐 Register</button>
+            <button onClick={() => setView('login')}>🔐 Login</button>
+            <button onClick={() => setView('register')}>🔐 Register</button>
           </>
         )}
       </div>
